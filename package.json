@@ -1,14 +1,14 @@
 {
-  "name": "gulp-xml2json",
+  "name": "gulp-csv2json",
   "version": "0.1.0",
-  "description": "xml to json using gulp",
+  "description": "csv to json using gulp",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "keywords": [
     "gulp",
-    "xml",
+    "csv",
     "json"
   ],
   "dependencies": {
