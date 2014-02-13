@@ -21,7 +21,7 @@ module.exports = function (options) {
 		}
 
 		if (['.csv'].indexOf(path.extname(file.path)) === -1) {
-			gutil.log('gulp-csv2json: Skipping unsupported xml ' + gutil.colors.blue(file.relative));
+			gutil.log('gulp-csv2json: Skipping unsupported csv ' + gutil.colors.blue(file.relative));
 			return cb(null, file);
 		}
 
@@ -68,7 +68,7 @@ module.exports = function (options) {
 
 					})
 					.on('error', function(error){
-            return cb(new gutil.PluginError('gulp-csv2json', error));
+            					return cb(new gutil.PluginError('gulp-csv2json', error));
 					});
 					
 			});
