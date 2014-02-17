@@ -1,5 +1,7 @@
 # gulp-csv2json
 
+[![Build Status](https://travis-ci.org/DataGarage/gulp-csv2json.png?branch=master)](https://travis-ci.org/DataGarage/gulp-csv2json)
+
 gulp plugin convert csv to json
 
 ## Install
