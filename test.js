@@ -2,17 +2,18 @@
 var fs = require('fs');
 var assert = require('assert');
 var gutil = require('gulp-util');
-var cssmin = require('./index');
+var csv2json = require('./index');
 
-it('should minify css', function (cb) {
-	var stream = cssmin();
+it('should convert csv to json', function (cb) {
+	var stream = csv2json();
 	stream.on('data', function (file) {
-		assert();
+    var parse_file = JSON.parse(file.contents.toString('utf-8'));
+		assert(parse_file instanceof Object);
 		cb();
 	});
 
 	stream.write(new gutil.File({
-		path: __dirname + '/sample/test.css',
-		contents: fs.readFileSync(__dirname + '/sample/test.css')
+		path: __dirname + '/sample/sample-csv.csv',
+		contents: fs.readFileSync(__dirname + '/sample/sample-csv.csv')
 	}));
 });
