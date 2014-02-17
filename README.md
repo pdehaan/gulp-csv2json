@@ -27,7 +27,7 @@ gulp.task('default', function () {
 
 ## API
 
-### csv2json()
+### csv2json(option)
 
 
 ## License
