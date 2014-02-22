@@ -18,10 +18,12 @@ npm install --save-dev gulp-csv2json
 ```js
 var gulp = require('gulp');
 var csv2json = require('gulp-csv2json');
+var rename = require('gulp-rename');
 
 gulp.task('default', function () {
 	gulp.src('src/**/*.csv')
 		.pipe(csv2json())
+		.pipe(rename({extname: '.json'}))
 		.pipe(gulp.dest('dist'));
 });
 ```

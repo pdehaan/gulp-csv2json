@@ -19,7 +19,8 @@
     "map-stream": "0.0.4",
     "xml2js": "~0.4.1",
     "gulp": "~3.5.2",
-    "csv": "~0.3.7"
+    "csv": "~0.3.7",
+    "gulp-rename": "~1.1.0"
   },
   "author": "chilijung",
   "license": "MIT",
