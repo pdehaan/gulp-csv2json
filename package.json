@@ -8,6 +8,7 @@
   },
   "keywords": [
     "gulp",
+    "gulpplugin",
     "csv",
     "json"
   ],
@@ -26,5 +27,11 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "~1.17.1"
+  },
+  "homepage": "https://github.com/DataGarage/gulp-csv2json/",
+  "bugs": "https://github.com/DataGarage/gulp-csv2json/issues/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DataGarage/gulp-csv2json.git"
   }
 }
